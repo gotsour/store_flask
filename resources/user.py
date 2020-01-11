@@ -44,7 +44,7 @@ class User(Resource):
         user.delete_from_db()
         return {'message': 'User deleted'}, 200
 
-class UserLogin(Resource)
+class UserLogin(Resource):
     @classmethod
     def post(cls):
         # get data from parser
